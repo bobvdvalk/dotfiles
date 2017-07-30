@@ -1,0 +1,22 @@
+{
+    "segment_data": {
+	"gitstatus": {
+	    "args": {
+		"show_tag": true
+	    }
+	}
+    },
+    "segments": {
+	"left": [
+	    {
+		"function": "powerline.segments.common.env.user"
+	    },
+	    {
+		"function": "powerline.segments.shell.cwd"
+	    },
+	    {
+		"function": "powerline_gitstatus.gitstatus"
+	    }
+	]
+    }
+}

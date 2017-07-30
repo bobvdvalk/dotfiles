@@ -1,0 +1,24 @@
+{
+    "name": "Default",
+    "groups": {
+        "gitstatus":                 { "fg": "gray9",           "bg": "gray4", "attrs": [] },
+        "gitstatus_branch":          { "fg": "gray9",           "bg": "gray4", "attrs": [] },
+        "gitstatus_branch_clean":    { "fg": "gray9",           "bg": "gray4", "attrs": [] },
+        "gitstatus_branch_dirty":    { "fg": "gray9",           "bg": "gray4", "attrs": ["bold"] },
+        "gitstatus_branch_detached": { "fg": "mediumpurple",    "bg": "gray4", "attrs": ["bold"] },
+        "gitstatus_tag":             { "fg": "darkcyan",        "bg": "gray4", "attrs": [] },
+        "gitstatus_behind":          { "fg": "gray10",          "bg": "gray4", "attrs": [] },
+        "gitstatus_ahead":           { "fg": "gray10",          "bg": "gray4", "attrs": [] },
+        "gitstatus_staged":          { "fg": "green",           "bg": "gray4", "attrs": [] },
+        "gitstatus_unmerged":        { "fg": "brightred",       "bg": "gray4", "attrs": [] },
+        "gitstatus_changed":         { "fg": "mediumorange",    "bg": "gray4", "attrs": [] },
+        "gitstatus_untracked":       { "fg": "brightestorange", "bg": "gray4", "attrs": [] },
+        "gitstatus_stashed":         { "fg": "darkblue",        "bg": "gray4", "attrs": [] },
+        "gitstatus:divider":         { "fg": "gray9",           "bg": "gray4", "attrs": [] },
+
+        "workspace":                    {"fg": "gray9",         "bg": "gray1", "attrs": [] },
+        "w_visible":                    {"fg": "gray9",         "bg": "gray1", "attrs": [] },
+        "w_focused":                    {"fg": "gray9",         "bg": "gray4", "attrs": ["bold"] },
+        "w_urgent":                    {"fg": "gray9",         "bg": "gray1", "attrs": ["bold"] }
+    }
+}
