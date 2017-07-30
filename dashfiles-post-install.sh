@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Set Oracle JDK8 as prefered java
+sudo archlinux-java set java-8-jdk
 
 # Prompt for global git configuration
 if [ -z "$(git config user.name)" ]; then
@@ -27,3 +29,6 @@ vim +PluginUpdate +qall
 
 # Set Gnome Theme to Numix Frost
 gsettings set org.gnome.desktop.interface gtk-theme 'Numix-Frost'
+
+# Disable menu bar by default
+gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false

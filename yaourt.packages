@@ -25,6 +25,7 @@ powerline-common
 powerline-fonts
 python-powerline-gitstatus
 gparted
+chrome-gnome-shell
 
 # Other Applications
 gimp
