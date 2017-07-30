@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Set Oracle JDK8 as prefered java
-sudo archlinux-java set java-8-jdk
+if [ "$(archlinux-java get)" == "java-8-jdk" ]; then 
+    sudo archlinux-java set java-8-jdk
+fi
 
 # Prompt for global git configuration
 if [ -z "$(git config user.name)" ]; then
