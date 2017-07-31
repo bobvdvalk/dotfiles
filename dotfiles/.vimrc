@@ -40,3 +40,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Print Margin
+set colorcolumn=80
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
