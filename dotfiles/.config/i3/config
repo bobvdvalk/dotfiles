@@ -22,6 +22,12 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
+set $sensitivity 40
+bindsym $mod+Up    exec xdotool mousemove_relative --  0            -$sensitivity
+bindsym $mod+Down  exec xdotool mousemove_relative --  0             $sensitivity
+bindsym $mod+Left  exec xdotool mousemove_relative -- -$sensitivity  0
+bindsym $mod+Right exec xdotool mousemove_relative --  $sensitivity  0
+
 # Move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
