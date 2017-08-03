@@ -8,11 +8,15 @@ alias commit="git commit"
 alias pull="git pull"
 
 function portfwd {
+  args=""
+
   for i in ${@:2}
   do
     echo Forwarding port $i
-    ssh -N -L $i:localhost:$i $1 &
+    args="$args -L $i:localhost:$i"
   done
+
+  ssh $1 $args
 }
 
 include "$BASH_SOURCE$EXTEND"
