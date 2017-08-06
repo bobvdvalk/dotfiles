@@ -101,10 +101,6 @@ bar {
 # Load default screenlayout
 exec ~/.screenlayout/default.sh
 
-# Enable lockscreen
-exec --no-startup-id light-locker
-
 # Enable NM Applet
 exec --no-startup-id nm-applet
 
-bindsym $mod+p exec light-locker-command --lock

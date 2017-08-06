@@ -34,3 +34,6 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Numix-Frost'
 
 # Disable menu bar by default
 gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
+
+# Enable gdm
+sudo systemctl disable lightdm.service && sudo systemctl enable gdm
