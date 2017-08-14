@@ -85,6 +85,9 @@ bindsym $mod+Shift+r restart
 # Lock screen
 bindsym $mod+p exec i3lock-fancy
 
+# Screenshot
+bindsym $mod+Print --release exec scrot -s -e 'xclip -selection clipboard -t image/png "$f" && rm "$f"'
+
 # Resize window (you can also use the mouse for that)
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
