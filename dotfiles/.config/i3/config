@@ -82,6 +82,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
+# Lock screen
+bindsym $mod+p i3lock-fancy
+
 # Resize window (you can also use the mouse for that)
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt

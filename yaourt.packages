@@ -17,6 +17,7 @@ j4-dmenu-desktop
 arandr
 scrot
 xdotool
+i3lock-fancy-git
 
 # System Tools
 htop
