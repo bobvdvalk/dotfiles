@@ -20,4 +20,9 @@ function portfwd {
   ssh $1 $args
 }
 
+function docker-wipe {
+    docker rmi -f `docker images -q`
+    docker rm -f -v `docker ps -q`
+}
+
 include "$BASH_SOURCE$EXTEND"
