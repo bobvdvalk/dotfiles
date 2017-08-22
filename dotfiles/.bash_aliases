@@ -21,8 +21,12 @@ function portfwd {
 }
 
 function docker-wipe {
+    docker rm -f -v `docker ps -q -a`
     docker rmi -f `docker images -q`
-    docker rm -f -v `docker ps -q`
+}
+
+function run {
+    ($@ &> /dev/null; echo "Finished $BASHPID with $?") &
 }
 
 include "$BASH_SOURCE$EXTEND"
