@@ -38,4 +38,5 @@ eval $(go env | sed -e 's/^/export /')
 # Set up path
 export PATH="$PATH:$HOME/bin"
 
-
+# Set up cd path
+export CDPATH="$GOPATH/src/github.com:$GOPATH/src/bitbucket.org"
