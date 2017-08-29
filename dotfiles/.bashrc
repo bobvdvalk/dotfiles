@@ -32,9 +32,10 @@ numlockx on
 include "$BASH_SOURCE$EXTEND"
 
 # Set up go environment
+export GOPATH="$HOME"
 eval $(go env | sed -e 's/^/export /')
 
 # Set up path
-export PATH="$PATH:$HOME/bin:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/bin"
 
 
