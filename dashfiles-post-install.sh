@@ -38,5 +38,8 @@ gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
 # Enable gdm
 sudo systemctl disable lightdm.service && sudo systemctl enable gdm
 
+# Delete obsolete folders
+rm -rf ~/Music ~/Videos ~/Pictures
+
 # Enable night light
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
