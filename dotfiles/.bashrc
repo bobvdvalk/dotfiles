@@ -40,3 +40,6 @@ export PATH="$PATH:$HOME/bin"
 
 # Set up cd path
 export CDPATH="$GOPATH/src/github.com:$GOPATH/src/bitbucket.org"
+
+# Include all bin folders in path
+export PATH="$PATH:$(find $HOME/src -name bin | paste -sd ':')"
