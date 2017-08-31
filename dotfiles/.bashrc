@@ -25,9 +25,6 @@ include "$HOME/.bash_aliases"
 # Enable Powerline
 include "/usr/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh"
 
-# Enable Numlock
-numlockx on
-
 # Include extensions
 include "$BASH_SOURCE$EXTEND"
 

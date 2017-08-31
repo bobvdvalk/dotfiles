@@ -110,3 +110,5 @@ exec ~/.screenlayout/default.sh
 # Enable NM Applet
 exec --no-startup-id nm-applet
 
+# Enable numlock
+exec --no-startup-id numlockx on
