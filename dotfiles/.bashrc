@@ -39,4 +39,4 @@ export PATH="$PATH:$HOME/bin"
 export CDPATH=".:$GOPATH/src/github.com:$GOPATH/src/bitbucket.org"
 
 # Include all bin folders in path
-export PATH="$PATH:$(find $HOME/src -name bin | paste -sd ':')"
+export PATH="$PATH:$(find $HOME/src -name bin 2> /dev/null | paste -sd ':')"
