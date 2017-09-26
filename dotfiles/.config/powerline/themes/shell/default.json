@@ -1,22 +1,33 @@
 {
     "segment_data": {
-	"gitstatus": {
-	    "args": {
-		"show_tag": true
-	    }
-	}
+        "gitstatus": {
+            "args": {
+                "show_tag": true
+            }
+        },
+        "cwd": {
+            "args": {
+                "dir_limit_depth": 100
+            }
+        }
     },
     "segments": {
-	"left": [
-	    {
-		"function": "powerline.segments.common.env.user"
-	    },
-	    {
-		"function": "powerline.segments.shell.cwd"
-	    },
-	    {
-		"function": "powerline_gitstatus.gitstatus"
-	    }
-	]
+        "above": [
+            {
+                "left": [
+                    {
+                        "function": "powerline.segments.shell.cwd"
+                    },
+                    {
+                        "function": "powerline_gitstatus.gitstatus"
+                    }
+                ]
+            }
+        ],
+        "left": [
+            {
+                "function": "powerline.segments.common.env.user"
+            }
+        ]
     }
 }
