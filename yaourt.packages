@@ -1,7 +1,6 @@
 # Communication Tools
 telegram-desktop-bin
 slack-desktop
-discord
 
 # Developer Tools
 jdk
@@ -10,6 +9,7 @@ intellij-idea-ultimate-edition
 go
 maven
 docker
+npm
 
 # I3 Desktop Environment
 i3-wm
@@ -23,7 +23,6 @@ i3lock-fancy-dualmonitors-git
 
 # System Tools
 htop
-drive
 numlockx
 powerline
 powerline-common
