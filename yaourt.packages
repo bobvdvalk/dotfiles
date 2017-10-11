@@ -3,7 +3,7 @@ telegram-desktop-bin
 slack-desktop
 
 # Developer Tools
-jdk
+jdk8
 vim
 intellij-idea-ultimate-edition
 go
