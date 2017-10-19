@@ -32,11 +32,15 @@ include "$BASH_SOURCE$EXTEND"
 export GOPATH="$HOME"
 eval $(go env | sed -e 's/^/export /')
 
+# Set up npm environment
+export NPM_PACKAGES="${HOME}/.npm-packages"
+
 # Set up path
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$(find $HOME/src -name bin 2> /dev/null | paste -sd ':'):$NPM_PACKAGES/bin"
 
 # Set up cd path
 export CDPATH=".:$GOPATH/src/github.com:$GOPATH/src/bitbucket.org"
 
-# Include all bin folders in path
-export PATH="$PATH:$(find $HOME/src -name bin 2> /dev/null | paste -sd ':')"
+# Set up manpath
+unset MANPATH
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
