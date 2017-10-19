@@ -44,3 +44,6 @@ set expandtab
 " Print Margin
 set colorcolumn=80
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
+" Set tabstop to 2 for yaml files
+autocmd BufRead,BufNewFile *.yml set shiftwidth=2 tabstop=2
