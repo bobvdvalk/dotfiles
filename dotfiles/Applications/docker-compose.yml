@@ -6,7 +6,7 @@ services:
     volumes:
       - ./mongodb:/data/db
     ports:
-      - 27017:27017
+      - $MONGO_PORT:27017
   mysql:
     image: mysql:$MYSQL_VERSION
     environment:
@@ -14,4 +14,10 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     ports:
-      - 3306:3306
+      - $MYSQL_PORT:3306
+  www:
+    image: nginx:$WWW_NGINX_VERSION
+    volumes:
+      - $WWW_ROOT:/usr/share/nginx/html
+    ports:
+      - $WWW_PORT:80
