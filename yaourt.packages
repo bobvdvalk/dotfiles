@@ -15,7 +15,7 @@ npm
 # I3 Desktop Environment
 i3-wm
 i3status
-j4-dmenu-desktop
+dmenu-git
 arandr
 scrot
 xclip
